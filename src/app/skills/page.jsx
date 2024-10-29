@@ -22,6 +22,7 @@ export default function Skills() {
     const handleMouseEnter = () => {
         setAnimate(true);
     };
+    console.log("hello");
 
     return (
         <div>
