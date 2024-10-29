@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family:'Open Sans';
+  --background: #ffffff;
+  --foreground: #171717;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: black;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+input::placeholder {
+  color: #606060; /* Replace with your color */
+}
+
+textarea::placeholder {
+  color: #606060; /* Replace with your color */
+ 
+}
+/* styles.css or your component's CSS file */
+.custom-gradient-text {
+  background: linear-gradient(90deg, #eb5424 1%, #D14B20 40%, #B8421C 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

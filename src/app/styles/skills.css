@@ -1,0 +1,189 @@
+.skills_section {
+    width: 100%;
+    height: 82vh;
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+
+}
+
+.skills_main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 55px;
+    grid-column-gap: 50px;
+}
+
+.skill_bar {
+    display: flex;
+    flex-direction: row; /* To stack the icon and content rows vertically */
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.icon_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill_icon {
+    width: 40px; /* Adjust icon size */
+    height: auto;
+}
+
+.content_row {
+    width: 65%;
+}
+.icon_row {
+    width: 37px;
+    margin-top: 18px;
+}
+
+.content_row .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill_bar .bar {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar h3{
+    color: #303030;
+    font-size:18px;
+    font-weight:500;
+}
+
+.skill_bar .bar span {
+    height: 100%;
+    position: absolute;
+    background-color: #e74d06;
+    border-radius: 25px;
+}
+
+.skill_bar .bar .html {
+    width: 90%;
+    animation: html 2s;
+}
+
+.skill_bar .bar .css {
+    width: 80%;
+    animation: css 2s;
+}
+.skill_bar .bar .tailwindcss {
+    width: 70%;
+    animation: css 2s;
+}
+
+.skill_bar .bar .javascript {
+    width: 60%;
+    animation: css 2s;
+}
+
+.skill_bar .bar .figma {
+    width: 80%;
+    animation: css 2s;
+}
+
+.skill_bar .bar .reactjs {
+    width: 80%;
+    animation: css 2s;
+}
+
+.skill_bar .bar .redux {
+    width: 70%;
+    animation: css 2s;
+}
+.skill_bar .bar .nextjs {
+    width: 70%;
+    animation: css 2s;
+}
+
+.skill_bar .bar .mongodb {
+    width: 80%;
+    animation: css 2s;
+}
+.skill_bar .bar .nodejs {
+    width: 50%;
+    animation: css 2s;
+}
+.skill_bar .bar .expressjs {
+    width: 50%;
+    animation: css 2s;
+}
+
+/* Add other animations like before */
+@keyframes html {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+
+@keyframes css {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+
+@keyframes tailwind {
+    0% { width: 0%; }
+    100% { width: 70%; }
+}
+
+@keyframes Javascript {
+    0% { width: 0%; }
+    100% { width: 60%; }
+}
+
+@keyframes figma {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+
+@keyframes reactjs {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+
+@keyframes redux {
+    0% { width: 0%; }
+    100% { width: 70%; }
+}
+
+@keyframes nextjs {
+    0% { width: 0%; }
+    100% { width: 70%; }
+}
+
+@keyframes mongodb {
+    0% { width: 0%; }
+    100% { width: 70%; }
+}
+
+@keyframes nodejs {
+    0% { width: 0%; }
+    100% { width: 50%; }
+}
+
+@keyframes expressjs {
+    0% { width: 0%; }
+    100% { width: 50%; }
+}
+/* Continue with the other skill animations */
+/* styles.css or your component's CSS file */
+.custom-gradient-text {
+    background: linear-gradient(90deg, #eb5424 1%, #D14B20 40%, #B8421C 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

@@ -1,0 +1,64 @@
+.heroPage .text {
+    position: relative;
+    color: #4070F4;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.heroPage .sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010718;
+    border-left: 2px solid #4070F4;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+
+   /* . container {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: '100px',
+      height: '100px',
+      borderRadius: '50%',
+      backgroundColor: '#D3D3D3',
+    },
+    arrow: {
+      width: '15px',
+      height: '15px',
+      borderRight: '2px solid black',
+      borderTop: '2px solid black',
+      transform: 'rotate(45deg)',
+    } */
+
+   
+.conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: '50%';
+    background-color: #d3d3d3;
+
+}
+.arrow {
+    width: '15px';
+    height: 15px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    transform: rotate(45deg);
+}
