@@ -159,7 +159,7 @@ const ContactForm = () => {
                             Send Message
                         </button>
 
-                        <div
+                        <div    
                             className={`fixed bottom-32 right-32 px-4 py-3 rounded-lg shadow-lg flex items-center transition-opacity duration-300 ${message ? "opacity-100" : "opacity-0"
                                 } ${isSuccess ? "bg-green-100 border-green-400 text-green-700" : "bg-red-100 border-red-400 text-red-700"}`}
                             role="alert"
