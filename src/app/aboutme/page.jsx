@@ -7,7 +7,6 @@ import Image from "next/image";
 import '../styles/aboutme.css'
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import photo from "/newformal.png";
 
 export default function aboutPage() {
     const [post, setPost] = useState([]);
@@ -116,17 +115,18 @@ export default function aboutPage() {
                                     whileInView={{ y: 0, scale: 1, opacity: 1 }} // End state
                                     transition={{ duration: 1, ease: "easeOut" }} // Transition properties
                                 >
-                                    <Image
+                                   
+                                    <img
+                                        src={post.image ? post.image : "defaultImage.jpg"}
                                         width={500}
                                         height={150}
-                                        src={photo}
                                         style={{
                                             borderRadius: "10px",
                                             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
                                         }}
-                                        alt="Your Image" // Add an alt attribute for accessibility
                                     />
                                 </motion.div>
+                                
                             </div>
                         </div>
 
