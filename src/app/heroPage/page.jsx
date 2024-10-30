@@ -1,3 +1,4 @@
+'use client'
 import Navbar from "../Navbar/page";
 import insta from "../assets/insta.png";
 import facebook from "../assets/facebook.png";
