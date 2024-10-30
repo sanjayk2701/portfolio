@@ -4,7 +4,7 @@ import facebook from "../assets/facebook.png";
 import twitter from "../assets/twit.png";
 import linkedin from "../assets/linkedin.png";
 import Image from "next/image";
-import bgimage from "/Users/support/Desktop/Portfolio/portfolio/assets/bgimage.png";
+import bgimage from "/bgimage.png";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 // import {fadeIn} from "../../variants.js"

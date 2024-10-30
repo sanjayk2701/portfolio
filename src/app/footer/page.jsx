@@ -1,6 +1,4 @@
-import insta from "../assets/insta.png";
-import twitter from "../assets/twit.png";
-import linkedin from "../assets/linkedin.png";
+
 import Image from "next/image";
 import fbwhite from "../assets/fbwhite.png"
 import instawhite from "../assets/insta-white.png"
