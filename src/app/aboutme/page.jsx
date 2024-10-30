@@ -115,7 +115,7 @@ export default function aboutPage() {
                                     whileInView={{ y: 0, scale: 1, opacity: 1 }} // End state
                                     transition={{ duration: 1, ease: "easeOut" }} // Transition properties
                                 >
-                                   
+
                                     <img
                                         src={post.image ? post.image : "defaultImage.jpg"}
                                         width={500}
@@ -126,7 +126,7 @@ export default function aboutPage() {
                                         }}
                                     />
                                 </motion.div>
-                                
+
                             </div>
                         </div>
 
