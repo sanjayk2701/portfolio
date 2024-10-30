@@ -1,9 +1,9 @@
 'use client'
-import Navbar from "../Navbar/page";
-import insta from "../assets/insta.png";
-import facebook from "../assets/facebook.png";
-import twitter from "../assets/twit.png";
-import linkedin from "../assets/linkedin.png";
+import Navbar from "../../components/Navbar/page";
+import insta from "../../assets/insta.png";
+import facebook from "../../assets/facebook.png";
+import twitter from "../../assets/twit.png";
+import linkedin from "../../assets/linkedin.png";
 import Image from "next/image";
 import bgimage from "/bgimage.png";
 import { TypeAnimation } from 'react-type-animation';

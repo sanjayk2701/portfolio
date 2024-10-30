@@ -32,7 +32,7 @@ export default function Projects() {
     const handleProjectDetails = (projectid) => {
         // Store current scroll position before navigating
         localStorage.setItem("projectsScrollPosition", window.scrollY);
-        router.push(`/projectDetails/${projectid}`);
+        router.push(`/pages/projects//projectDetails/${projectid}`);
     };
 
     return (

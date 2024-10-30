@@ -1,9 +1,9 @@
 
 import Image from "next/image";
-import fbwhite from "../assets/fbwhite.png"
-import instawhite from "../assets/insta-white.png"
-import twitterwhite from "../assets/twitter-white.png"
-import lnwhite from "../assets/ln-white.png"
+import fbwhite from "../../assets/fbwhite.png"
+import instawhite from "../../assets/insta-white.png"
+import twitterwhite from "../../assets/twitter-white.png"
+import lnwhite from "../../assets/ln-white.png"
 
 
 

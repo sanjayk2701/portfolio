@@ -2,7 +2,7 @@
 
 import { Link } from 'react-scroll';
 import Image from 'next/image';
-import profileLogo from "../assets/profileLogo.png";
+import profileLogo from "../../assets/profileLogo.png";
 
 const Navbar = () => {
   return (

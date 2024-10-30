@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
 
-const Resume = () => {
+export default function resumeDetails  () {
     const router = useRouter();
 
     const [resumeData, setResumeData] = useState([]);
@@ -142,6 +142,4 @@ const Resume = () => {
             </div>
         </div>
     );
-};
-
-export default Resume;
+}

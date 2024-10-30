@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 // import Photo from "../../app/assets/formal.jpeg"
 import Image from "next/image";
-import '../styles/aboutme.css'
+import '../../styles/aboutme.css'
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
@@ -37,9 +37,14 @@ export default function aboutPage() {
 
 
 
-    const navigateResume = (postid) => {
+    // const navigateResume = (postid) => {
+    //     localStorage.setItem("projectsScrollPosition", window.scrollY);
+    //     router.push('pages/resumeDetails');
+    //     // Ensure there's a '/' before postid
+    // };
+    const navigateResume = () => {
         localStorage.setItem("projectsScrollPosition", window.scrollY);
-        router.push(`/resume/${postid}`);
+        router.push("/pages/resumeDetails")
         // Ensure there's a '/' before postid
     };
 

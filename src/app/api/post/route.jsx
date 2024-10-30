@@ -1,5 +1,5 @@
 import connectMongodb from "../../../../utils/connectMongodb";
-import postModel from "../../../../models/postModel";
+import postModel from "../../../../models/postModel.jsx";
 
 export async function GET() {
     try {
