@@ -7,17 +7,11 @@ import Image from "next/image";
 import '../styles/aboutme.css'
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import photo from "/Users/support/Desktop/Portfolio/portfolio/assets/newformal.png"
-
-
-
+import photo from "/newformal.png";
 
 export default function aboutPage() {
     const [post, setPost] = useState([]);
     const router = useRouter();
-
-
-
 
     useEffect(() => {
         // ... fetch and set posts
