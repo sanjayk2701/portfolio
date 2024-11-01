@@ -37,9 +37,14 @@ export default function aboutPage() {
 
 
 
-    const navigateResume = (postid) => {
+    // const navigateResume = (postid) => {
+    //     localStorage.setItem("projectsScrollPosition", window.scrollY);
+    //     router.push('pages/resumeDetails');
+    //     // Ensure there's a '/' before postid
+    // };
+    const navigateResume = () => {
         localStorage.setItem("projectsScrollPosition", window.scrollY);
-        router.push("/pages/resumeDetails");
+        router.push("/pages/resumeDetails")
         // Ensure there's a '/' before postid
     };
 
