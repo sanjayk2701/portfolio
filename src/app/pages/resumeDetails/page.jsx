@@ -2,25 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
 
-const Resume = () => {
+const resumeDetails = () => {
     const router = useRouter();
 
-    const [resumeData, setResumeData] = useState([]);
 
-    useEffect(() => {
-        // Fetch resume data
-        fetch(process.env.NEXT_PUBLIC_API_URL + '/resume')
-            .then((res) => res.json())
-            .then((data) => {
-                console.log('fetched data', data);
-                setResumeData(data);
-            })
-            .catch((err) => console.error('Error fetching posts:', err));
-    
-     
-       
-    }, []);
-    
+  
 
     const handleBack = (event) => {
         event.preventDefault();
@@ -54,6 +40,7 @@ const Resume = () => {
                             <li>Additional Skills: Responsive Web Design, Wireframing & Prototype Design</li>
                         </ul>
                     </div>
+                    
                 </div>
             </div>
             <hr className="border-gray-300 my-2 border-[1px]" />
@@ -88,17 +75,36 @@ const Resume = () => {
                     title: "1. OORT (Optius Order Removal Tool):",
                     description: [
                         "React.js Development: Developed a frontend for the Optius Order Removal Tool (OORT) using React.js, optimizing order disconnection and cancellation workflows. This enhancement achieved a 35% reduction in operational time for Lumen technicians, demonstrating significant improvements in process efficiency.",
-                        // ... (other project descriptions)
+                        "UI/UX Design: Crafted a user-centric, adaptive interface with responsive design, ensuring accessibility across devices and improving the user experience by 25%. This design approach also increased mobile and cross-platform usability.",
+                        "Automated Workflow: Implemented an automated order management system, minimizing manual paperwork by 70% and significantly enhancing administrative efficiency.",
+                        "Data Handling & API Integration: Managed up to 1,000 orders through manual input and Excel uploads, ensuring flexibility and accuracy in order processing. Integrated RESTful APIs to improve data transfer efficiency and accuracy during order management.",
+                        "Batch Processing : Orchestrated batch processing of orders, maximizing throughput and reducing processing time by organizing orders in groups of four, leading to optimized resource utilization.",
+                        "System Revamp & Customer Satisfaction : Overhauled the entire order management system, leading to a 20% increase in customer satisfaction through more efficient workflows and enhanced user interactions.",
+                        "Performance Improvement: Shortened order inquiry resolution time by 15%, accelerating the overall response time and improving operational efficiency."
+                        
+
+                        
                     ]
                 }, {
                     title: "2. AT&T- ENTERPRISE CUSTOMER :",
                     description: [
                         // ... (project descriptions)
+                        "React.js Development:  Developed frontend for AT&T Enterprise customer web application using React.js and Tailwind CSS to streamline access to network APIs for enterprise users. The application simplified API provisioning after document verification, ensuring compliance with AT&T’s terms and conditions and improving operational workflows.",
+                        "API Integration & Management: Enabled users to seamlessly test APIs, submit issue queries, and provide reviews through a unified interface, reducing the complexity of API management and enhancing overall system efficiency.",
+                        "UI/UX Design: Created a user-centric and responsive interface that ensured optimal usability across devices. The intuitive design improved user interaction and experience, delivering a consistent and high-quality interface for enterprise-level customers.",
+                        "Automated Workflow Optimization: Automated the API management process, significantly reducing paperwork and manual tasks while improving data handling and processing capabilities. This approach enhanced operational efficiency and streamlined complex processes for users",
+                        "Improved User Experience & Compliance: Delivered a robust solution that simplified API management, improving operational efficiency and user satisfaction, while ensuring compliance with AT&T's policies and procedures."
+
                     ]
                 }, {
                     title: "3. AI COMPANION (chatbot)",
                     description: [
                         // ... (project descriptions)
+                        "React.js Development: Led the design and development of an AI companion chatbot utilizing React.js for the frontend, with WebSocket API integration to automate key processes across the project lifecycle. This initiative streamlined user interactions from Business Requirements Document (BRD) creation to architecture design, development, testing, and deployment.",
+                        "Real-Time API Integration: Enhanced real-time communication through WebSocket API integration, facilitating instant, two-way interactions for the AI chatbot. This innovation significantly improved system performance and operational efficiency.",
+                        "User-Centric Interface Design: Developed a user-friendly interface to enhance user engagement and satisfaction. The intuitive design streamlined communication, allowing for rapid data exchange and improving response accuracy and speed.",
+                        "Optimized Response Management:  Utilized the WebSocket API to enable real-time interactions, effectively reducing response latency and enhancing user experience. This approach simplified complex user interactions and optimized resource utilization for superior performance.",
+                        "Advanced Natural Language Processing: Integrated advanced natural language processing (NLP) capabilities, allowing the chatbot to comprehend and respond to user queries more effectively. This enhancement improved the chatbot's ability to manage complex inquiries and deliver accurate, context-aware responses, further enriching user interaction."
                     ]
                 }].map((project, index) => (
                     <div key={index} className="my-2 text-textColor">
@@ -144,4 +150,4 @@ const Resume = () => {
     );
 };
 
-export default Resume;
+export default resumeDetails;

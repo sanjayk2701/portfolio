@@ -1,12 +1,12 @@
 'use client';
 
-import Aboutme from "./aboutme/page";
-import Projects from "./projects/page";
-import Skills from "./skills/page";
-import HeroPage from "./heroPage/page";
-import EducationOverview from "./education/page";
-import Contact from "./contact/page";
-import Footer from "./footer/page";
+import Aboutme from "./pages/aboutme/page";
+import Projects from "./pages/projects/page";
+import Skills from "./pages/skills/page";
+import HeroPage from "./pages/heroPage/page";
+import EducationOverview from "./pages/education/page";
+import Contact from "./pages/contact/page";
+import Footer from "./components/Footer/page";
 
 export default function main() {
   return (

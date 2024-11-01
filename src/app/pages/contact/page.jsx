@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import location from "../assets/location.png";
-import email from "../assets/email.png";
-import call from "../assets/call.png";
+import location from "../../assets/location.png";
+import email from "../../assets/email.png";
+import call from "../../assets/call.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";

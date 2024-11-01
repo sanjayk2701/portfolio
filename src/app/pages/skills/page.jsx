@@ -1,18 +1,18 @@
 'use client'
 
 import { useState } from "react";
-import "../styles/skills.css";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import js from "../assets/js.png";
-import react from "../assets/react.png";
-import node from "../assets/nodejs.png";
-import mongo from "../assets/mongodb.png";
-import nextjs from "../assets/nextjs.png";
-import tailwind from "../assets/tailwind.png";
-import figma from "../assets/figma.png";
-import redux from "../assets/redux.png";
-import expressjs from "../assets/expressjs.png";
+import "../../styles/skills.css";
+import html from "../../assets/html.png";
+import css from "../../assets/css.png";
+import js from "../../assets/js.png";
+import react from "../../assets/react.png";
+import node from "../../assets/nodejs.png";
+import mongo from "../../assets/mongodb.png";
+import nextjs from "../../assets/nextjs.png";
+import tailwind from "../../assets/tailwind.png";
+import figma from "../../assets/figma.png";
+import redux from "../../assets/redux.png";
+import expressjs from "../../assets/expressjs.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 

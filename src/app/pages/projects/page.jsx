@@ -32,7 +32,7 @@ export default function Projects() {
     const handleProjectDetails = (projectid) => {
         // Store current scroll position before navigating
         localStorage.setItem("projectsScrollPosition", window.scrollY);
-        router.push(`/projectDetails/${projectid}`);
+        router.push(`pages/projects/projectDetails/${projectid}`);
     };
 
     return (
@@ -44,7 +44,7 @@ export default function Projects() {
                 className="text-6xl font-medium mb-12"
                 viewport={{ once:false }} 
             >
-                MY <span className="font-bold">WORK</span>
+                MY <span className="font-bold">WORKS</span>
             </motion.h3>
 
             <div className="flex flex-row justify-around flex-wrap">
