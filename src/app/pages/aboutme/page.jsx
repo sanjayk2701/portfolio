@@ -105,10 +105,11 @@ export default function aboutPage() {
                                         ease: "easeOut", // Smooth easing
                                         duration: 0.8, // Animation duration
                                     }}
-                                    onClick={() => navigateResume(post._id)}
+                                    onClick={navigateResume}
                                     className="bg-primaryColor w-[11rem] text-white py-2 px-4 rounded shadow-md hover:bg-custom-gradient transition"
                                 >
-                                    {post.button}
+                                    {/* {post.button} */}
+                                    View Resume
                                 </motion.button>
 
 
