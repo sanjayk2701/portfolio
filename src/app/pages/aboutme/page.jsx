@@ -110,7 +110,7 @@ export default function aboutPage() {
                                 >
                                     {/* {post.button} */}
                                     View Resume
-                                </motion.button>
+                                </motion.button>    
 
 
                             </div>

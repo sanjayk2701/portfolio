@@ -18,6 +18,7 @@ const ContactForm = () => {
         setInputs((state) => ({ ...state, [e.target.name]: e.target.value }));
     };
 
+    console.log(message,"contact message");
     const handleSubmit = (e) => {
         e.preventDefault();
 
