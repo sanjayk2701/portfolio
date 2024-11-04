@@ -64,8 +64,52 @@ const ContactForm = () => {
                 <div className="flex w-full h-[40rem] bg-white rounded-lg shadow-lg overflow-hidden">
                     {/* Left Side */}
                     <div className="flex flex-col w-full max-w-2xl gap-12 bg-primaryColor text-white px-20 py-32">
-                        {/* Address, Email, Call sections */}
-                        {/* Same as before... */}
+                        <motion.div
+                            initial={{ x: -20, scale: 0.8, opacity: 0 }}  // Start position and scale
+                            whileInView={{ x: 0, scale: 1, opacity: 1 }} // End position and scale
+                            transition={{ duration: 0.5, delay: 0.3 }} // Transition effects
+                            viewport={{ once:false }} // Ensure the animation occurs every time it enters the viewport
+
+
+                            className="flex flex-row items-center gap-2">
+                            <Image src={location} style={{ width: "2rem" }} />
+                            <div>
+                                <h2 className="text-xl font-bold text-secondaryTextColor">Address</h2>
+                                <p>No: 11/6, 29th street, Ashok Nagar, Chennai-83, Tamil Nadu, India</p>
+                            </div>
+                        </motion.div>
+                        <motion.div
+
+                            initial={{ x: -20, scale: 0.8, opacity: 0 }}  // Start position and scale
+                            whileInView={{ x: 0, scale: 1, opacity: 1 }} // End position and scale
+                            transition={{ duration: 0.5, delay: 0.5 }} // Transition effects
+                            viewport={{ once:false }} // Ensure the animation occurs every time it enters the viewport
+
+
+
+
+                            className="flex flex-row items-center gap-2">
+                            <Image src={email} style={{ width: "2rem" }} />
+                            <div>
+                                <h2 className="text-xl font-bold text-secondaryTextColor">Email</h2>
+                                <p>sanjaykalidass27@gmail.com</p>
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            initial={{ x: -20, scale: 0.8, opacity: 0 }}  // Start position and scale
+                            whileInView={{ x: 0, scale: 1, opacity: 1 }} // End position and scale
+                            transition={{ duration: 0.5, delay: 0.8 }} // Transition effects
+                            viewport={{ once:false }} // Ensure the animation occurs every time it enters the viewport
+
+
+
+                            className="flex flex-row items-center gap-2">
+                            <Image src={call} style={{ width: "2rem" }} />
+                            <div>
+                                <h2 className="text-xl font-bold text-secondaryTextColor">Call</h2>
+                                <p>91+ 7708660262</p>
+                            </div>
+                        </motion.div>
                     </div>
 
                     {/* Right Side */}
