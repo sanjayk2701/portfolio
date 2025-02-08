@@ -36,7 +36,7 @@ export default function Projects() {
     };
 
     return (
-        <div className="projects bg-#d9d9d9 text-titleColor h-full w-full p-12 pb-[6rem]">
+        <div className="projects bg-#d9d9d9 text-titleColor h-full w-full p-12 pb-[6rem]" style={{paddingTop:"0"}}>
             <motion.h3
                 initial={{ x: -20, opacity: 0 }}  
                 whileInView={{ x: 0, opacity: 1 }} 

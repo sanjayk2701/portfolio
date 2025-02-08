@@ -31,7 +31,7 @@ export default function AboutPage() {
     };
 
     return (
-        <div className="aboutMe bg-white text-titleColor min-h-screen flex flex-col items-center px-6 sm:px-12 md:px-20 py-12">
+        <div className="aboutMe bg-white text-titleColor min-h-screen flex flex-col items-center p-12 sm:px-12 md:px-20 ">
             {Array.isArray(post) && post.length > 0 ? (
                 post.map((post) => (
                     <div key={post.id} className="flex flex-col md:flex-row items-center justify-between gap-12 w-full max-w-6xl">

@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="text-foreground text-xl font-bold">
           <Image src={profileLogo} width={40} alt="Profile Logo" />
         </div>
-        <div className="space-x-12 text-lg font-medium">
+        <div className="space-x-12 text-lg font-medium pr-8">
           <Link
             to="hero"
             smooth={true}

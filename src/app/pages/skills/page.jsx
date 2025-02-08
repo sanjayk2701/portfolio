@@ -27,7 +27,7 @@ export default function Skills() {
     return (
         <div>
             <div
-                className="skills bg-white text-textColor h-full w-full p-12"
+                className="skills bg-white text-textColor h-full w-full p-12 mb-36"
                 onMouseEnter={handleMouseEnter}
             >
                 <motion.h3

@@ -12,8 +12,10 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 export default function HeroPage() {
+    // <div className="aboutMe bg-white text-titleColor min-h-screen flex flex-col items-center px-6 sm:px-12 md:px-20 py-12">
+
     return (
-        <div className="relative h-screen w-full flex flex-col justify-between bg-cover bg-center" style={{ backgroundImage: `url(${bgimage.src})` }}>
+        <div className="relative h-screen w-full flex flex-col justify-between bg-cover bg-center mb-24" style={{ backgroundImage: `url(${bgimage.src})` }}>
             <Navbar />
             
             <div className="flex flex-col items-center text-secondaryTextColor font-normal px-6 md:px-12 text-center">
