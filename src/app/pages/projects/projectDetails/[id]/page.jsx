@@ -31,7 +31,7 @@ export default function ProjectDetails({ params }) {
       {projectDetails && (
         <div className="max-w-7xl mx-auto p-8">
           {/* Title */}
-          <h1 className="text-4xl font-bold text-gray-900">
+          <h1 className="text-3xl font-bold text-gray-900">
             {projectDetails.title}
           </h1>
           <hr className="border-gray-300 my-4" />

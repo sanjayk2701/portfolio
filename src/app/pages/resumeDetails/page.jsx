@@ -35,13 +35,12 @@ const resumeDetails = () => {
         <div className="flex flex-row space-x-8 text-textColor pl-2">
           <div>
             <ul className="list-disc list-inside text-base space-y-0">
-              <li>Languages: JavaScript, HTML, CSS, Tailwind CSS</li>
-              <li>Frameworks: React, NextJs, ExpressJs</li>
+              <li>Languages : JavaScript, Html, CSS, SCSS, Tailwind Css.</li>
+              <li>Frameworks & Libraries : React.Js, Redux, Next.Js, Node.Js, Express.Js.</li>
               <li>Database: MongoDB</li>
-              <li>Tools & Platforms: Git, RESTful APIs, Axios, WebSocket</li>
+              <li>Tools & Platforms: Jest, VS Code, Github, RESTful APIs, Axios, WebSockets, Figma.</li>
               <li>
-                Additional Skills: Responsive Web Design, Wireframing &
-                Prototype Design
+              Specifications: Web Application Development, Responsive Web Design,API Integration, Wireframing & Prototype Design.
               </li>
             </ul>
           </div>
@@ -51,39 +50,30 @@ const resumeDetails = () => {
 
       {/* Professional Experience */}
       <div>
-        <h3 className="text-2xl font-bold text-titleColor pb-2">
+        <h3 className="text-2xl font-bold text-titleColor ">
           PROFESSIONAL EXPERIENCE
         </h3>
         <div className="flex flex-row gap-2 items-start justify-start text-textColor">
-          <div className="flex flex-col items-center">
-            <div className="bg-gray-400 h-4 w-4 rounded-full"></div>
-            <div className="bg-gray-300 w-0.5 h-64"></div>
-          </div>
-          <p className="text-sm pl-2 max-w-32">
-            08/2022 - Current | Prodapt | Chennai, India
-          </p>
+         
+       
           <div>
-            <p className="text-base font-semibold">
-              Associate Software Engineer
+            <p className="text-[14px] font-semibold">
+              Prodapt | Associate Software Engineer | Aug 2022 - Present
             </p>
-            <ul className="list-disc ml-6 mt-2 space-y-1">
+            <ul className="list-disc mt-2 ml-2 px-3  space-y-1">
               <li>
-                Unified React apps for performance and browser compatibility
-                using HTML5, CSS3, JavaScript, Bootstrap, and Tailwind CSS.
+               Engineered scalable frontend using React.js and JavaScript enhancing component reusability and maintainability across projects.
               </li>
               <li>
-                Enhanced website speed and scalability by following UI/UX best
-                practices.
+               Integrated REST APIs and WebSockets to enable real-time updates, enhancing user interactivity and reducing data latency by 45%.
               </li>
               <li>
-                Implemented chatbots with WebSocket integration for real-time
-                communication and automated data processing.
+              Boosted UI performance by 30% through implementation of lazy loading, code splitting, and DOM virtualization.
               </li>
               <li>
-                Constructed React apps with Redux and RESTful APIs; accelerated
-                performance with code splitting and lazy loading.
+               Conducted over 50+ code reviews and unit-tested components using Jest, ensuring 80%+ coverage and reducing post-deployment bugs.
               </li>
-              <li>Administered source control using GitHub and Postman.</li>
+              <li>Partnered with design and product teams to ship accessible, WCAG-compliant interfaces on time and within scope.</li>
             </ul>
           </div>
         </div>
@@ -95,30 +85,30 @@ const resumeDetails = () => {
         <h3 className="text-2xl font-bold text-titleColor ">PROJECTS</h3>
         {[
           {
-            title: "1. OORT (Optius Order Removal Tool):",
+            title: "1.Maestro-E (NID & Service Management Application)",
             description: [
-              "React.js Development: Developed a frontend for the Optius Order Removal Tool (OORT) using React.js, optimizing order disconnection and cancellation workflows. This enhancement achieved a 35% reduction in operational time for Lumen technicians, demonstrating significant improvements in process efficiency.",
-              "UI/UX Design: Crafted a user-centric, adaptive interface with responsive design, ensuring accessibility across devices and improving the user experience by 25%. This design approach also increased mobile and cross-platform usability.",
-              "Automated Workflow: Implemented an automated order management system, minimizing manual paperwork by 70% and significantly enhancing administrative efficiency.",
-              "Data Handling & API Integration: Managed up to 1,000 orders through manual input and Excel uploads, ensuring flexibility and accuracy in order processing. Integrated RESTful APIs to improve data transfer efficiency and accuracy during order management.",
-              "Batch Processing : Orchestrated batch processing of orders, maximizing throughput and reducing processing time by organizing orders in groups of four, leading to optimized resource utilization.",
-              "System Revamp & Customer Satisfaction : Overhauled the entire order management system, leading to a 20% increase in customer satisfaction through more efficient workflows and enhanced user interactions.",
-              "Performance Improvement: Shortened order inquiry resolution time by 15%, accelerating the overall response time and improving operational efficiency.",
+              "Built reusable and modular UI components using React.js, JavaScript,  Redux, and SCSS to streamline feature implementation and maintain consistent design patterns.",
+              "Implemented dynamic dashboards using Recharts, improving visibility into device statuses by 60%.",
+              "Implemented WebSocket-driven updates and lazy loading, reducing page load times by 30%.",
+              "Leveraged Redux with middleware to handle asynchronous API flows, ensuring consistency across Activation, Assurance, and Automation modules.",
+              "Wrote and maintained unit tests using Jest maintaining over 80% code coverage to uphold code quality and ensure stable component behavior throughout development.",
+              "Automated repetitive NID activation flows, cutting manual efforts by 50% and accelerating service provisioning timelines.",
             ],
           },
           {
-            title: "2. AT&T- ENTERPRISE CUSTOMER :",
+            title: "AT&T- ENTERPRISE CUSTOMER",
             description: [
               // ... (project descriptions)
-              "React.js Development:  Developed frontend for AT&T Enterprise customer web application using React.js and Tailwind CSS to streamline access to network APIs for enterprise users. The application simplified API provisioning after document verification, ensuring compliance with AT&T’s terms and conditions and improving operational workflows.",
-              "API Integration & Management: Enabled users to seamlessly test APIs, submit issue queries, and provide reviews through a unified interface, reducing the complexity of API management and enhancing overall system efficiency.",
-              "UI/UX Design: Created a user-centric and responsive interface that ensured optimal usability across devices. The intuitive design improved user interaction and experience, delivering a consistent and high-quality interface for enterprise-level customers.",
-              "Automated Workflow Optimization: Automated the API management process, significantly reducing paperwork and manual tasks while improving data handling and processing capabilities. This approach enhanced operational efficiency and streamlined complex processes for users",
-              "Improved User Experience & Compliance: Delivered a robust solution that simplified API management, improving operational efficiency and user satisfaction, while ensuring compliance with AT&T's policies and procedures.",
+              "Engineered a responsive web application using React.js, Javascript, Tailwind CSS,  to automate and simplify API provisioning for enterprise clients.",
+              "Implemented end-to-end automation of the API management process, improving data accuracy and eliminating 60% of prior paper-based steps.",
+              "Integrated secure and authenticated APIs using Node.js and Express.js, ensuring safe and efficient client-server communication.",
+              "Designed a Postman-style API explorer with integrated live testing, customer feedback, and documentation visibility, boosting developer engagement and discoverability.",
+              "Collaborated closely with product owners and developers during sprints, ensuring alignment with business requirements and secure API handling.",
+              "Conducted test coverage reviews and wrote unit tests using Jest, improving QA efficiency and minimizing post-deployment bugs.",
             ],
           },
           {
-            title: "3. AI COMPANION (chatbot)",
+            title: "AI COMPANION (chatbot)",
             description: [
               // ... (project descriptions)
               "React.js Development: Led the design and development of an AI companion chatbot utilizing React.js for the frontend, with WebSocket API integration to automate key processes across the project lifecycle. This initiative streamlined user interactions from Business Requirements Document (BRD) creation to architecture design, development, testing, and deployment.",
@@ -149,7 +139,7 @@ const resumeDetails = () => {
             <div className="bg-gray-400 h-4 w-4 rounded-full"></div>
             <div className="bg-gray-300 w-0.5 h-12"></div>
           </div>
-          <p className="text-sm pl-2 max-w-32">07/2024</p>
+          <p className="text-sm pl-1 max-w-32">07/2024</p>
           <div className="pl-8">
             <p className="text-base font-medium w-[34rem] ">
               <strong>B.E Computer Science and Engineering</strong> in SRM

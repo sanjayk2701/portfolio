@@ -82,7 +82,7 @@ export default function Projects() {
                       <TailSpin
                         visible={true}
                         height="30"
-                        width="50"
+                        width="70"
                         color="black"
                         ariaLabel="three-dots-loading"
                       />

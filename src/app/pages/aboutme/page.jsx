@@ -59,9 +59,10 @@ export default function AboutPage() {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false }}
                 transition={{ delay: 1, duration: 0.8, ease: "easeOut" }}
-                className="text-base sm:text-lg text-textColor"
+                className="text-base sm:text-md md:text-md text-textColor"
               >
-                {post.description}
+                I am a passionate <strong>frontend developer</strong> with nearly 3 years experience, I have built a track record of delivering intuitive and well-structured web applications. I am skilled at breaking down complex problems and creating interfaces that are both user-friendly and maintainable. My professional experience includes enterprise-level projects where I focused on thorough testing and code consistency. I work well with diverse teams to deliver solutions that meet both user needs and business objectives. I am committed to continuous learning and applying best practices to build effective applications.
+
               </motion.p>
               <motion.button
                 style={{ width: "140px", height: "40px" }}
