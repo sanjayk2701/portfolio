@@ -9,7 +9,7 @@ const projectSchema = new Schema({
 
 // Add a virtual field for a short description
 projectSchema.virtual('short_description').get(function() {
-    return this.description.substr(0, 300) + '...';
+    return this.description.substr(0, 250) + '...';
 });
 
 // Use models to prevent overwriting the model if it already exists

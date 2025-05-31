@@ -12,19 +12,18 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 export default function HeroPage() {
-    // <div className="aboutMe bg-white text-titleColor min-h-screen flex flex-col items-center px-6 sm:px-12 md:px-20 py-12">
 
     return (
-        <div className="relative h-screen w-full flex flex-col justify-between bg-cover bg-center mb-24" style={{ backgroundImage: `url(${bgimage.src})` }}>
+        <div className="relative h-screen w-full flex flex-col justify-between bg-cover bg-center mb-20" style={{ backgroundImage: `url(${bgimage.src})` }}>
             <Navbar />
             
-            <div className="flex flex-col items-center text-secondaryTextColor font-normal px-6 md:px-12 text-center">
-                <motion.p className="text-2xl sm:text-3xl md:text-4xl font-medium">Hello,</motion.p>
-                <motion.h2 className="text-5xl sm:text-6xl md:text-7xl font-medium drop-shadow-md shadow-sm leading-tight">SANJAY K</motion.h2>
+            <div className="flex flex-col items-center text-secondaryTextColor font-normal px-6 md:px-12 pb-5 text-center pb-20">
+                <motion.p className="text-xl sm:text-2xl md:text-3xl font-medium">Hello,</motion.p>
+                <motion.h2 className="text-2xl sm:text-6xl md:text-7xl font-medium drop-shadow-md shadow-sm leading-tight">SANJAY K</motion.h2>
                 
                 <div className="flex flex-col sm:flex-row items-center justify-center space-x-0 sm:space-x-2 mb-5 mt-3">
-                    <p className="text-3xl sm:text-4xl md:text-5xl text-secondaryTextColor font-medium">An interactive</p>
-                    <div className="text-3xl sm:text-4xl md:text-5xl font-medium text-titleColor inline-block">
+                    <p className="text-2xl sm:text-4xl md:text-5xl text-secondaryTextColor font-medium">An interactive</p>
+                    <div className="text-2xl sm:text-4xl md:text-5xl font-medium text-titleColor inline-block">
                         <TypeAnimation
                             sequence={[
                                 'Front-End Developer', 1000,
@@ -38,10 +37,12 @@ export default function HeroPage() {
                     </div>
                 </div>
 
-                <p className="text-lg sm:text-xl md:text-2xl text-secondaryTextColor max-w-3xl px-4">
-                    "I am a <strong>Front-End Developer</strong> and <strong>UX Designer</strong> focused on building sleek,
-                    <strong>responsive web experiences</strong>. Let's work together to create engaging, user-centered digital experiences."
-                </p>
+           <p className="text-base sm:text-lg md:text-xl text-secondaryTextColor font-normal max-w-5xl px-4">
+  "I am a <strong>Front-End Developer</strong> and <strong>UX Designer</strong> focused on building sleek,
+  <strong> responsive web experiences</strong>. Let's work together to create engaging, user-centered digital experiences."
+</p>
+
+
             </div>
             
             <div className="flex justify-center items-center gap-6 sm:gap-12 pb-6">

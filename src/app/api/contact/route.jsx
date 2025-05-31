@@ -9,7 +9,7 @@ export async function POST(req) {
         
         await connectMongodb();
         await ContactModel.create(contact); // Save contact to MongoDB
-
+ 
         await sendEmail(contact); // Send email
 
         return new Response(JSON.stringify({ message: 'Contact details have been sent!' }), {
