@@ -21,14 +21,12 @@ export default function Projects() {
       })
       .catch((err) => console.error("Error fetching projects:", err));
 
-    // Restore scroll position after a short delay
     const storedScrollPosition = localStorage.getItem("projectsScrollPosition");
     if (storedScrollPosition) {
-      // Use a timeout to ensure the scroll position is restored after render
       setTimeout(() => {
         window.scrollTo(0, parseInt(storedScrollPosition, 10));
-        localStorage.removeItem("projectsScrollPosition"); // Clear after using
-      }, 100); // Adjust this value if needed
+        localStorage.removeItem("projectsScrollPosition"); 
+      }, 100); 
     }
   }, []);
 
@@ -105,7 +103,6 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Tag */}
                 <p
                   className="text-sm font-medium border rounded-full max-w-fit px-3 py-0.5 mt-2"
                   onClick={() => handleProjectDetails(project._id)}
@@ -113,7 +110,6 @@ export default function Projects() {
                   Web App
                 </p>
 
-                {/* Title & Description */}
                 <div className="mt-2">
                   <div className="font-semibold text-md text-titleColor mb-1 truncate">
                     {project.title}

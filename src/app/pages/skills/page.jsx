@@ -30,10 +30,10 @@ export default function Skills() {
         onMouseEnter={handleMouseEnter}
       >
         <motion.h3
-          initial={{ x: -20, opacity: 0 }} // Start position and scale
-          viewport={{ once: false }} // Ensure the animation occurs every time it enters the viewport
-          whileInView={{ x: 0, opacity: 1 }} // End position and scale
-          transition={{ duration: 1, delay: 0.5 }} // Tran
+          initial={{ x: -20, opacity: 0 }}
+          viewport={{ once: false }} 
+          whileInView={{ x: 0, opacity: 1 }} 
+          transition={{ duration: 1, delay: 0.5 }} 
           className="text-5xl font-medium text-titleColor"
         >
           TECHNICAL <span className="font-bold">SKILLS</span>
