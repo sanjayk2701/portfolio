@@ -22,10 +22,58 @@ export default function Footer() {
         <div className="flex-1 md:flex-none">
           <h3 className="text-lg font-semibold mb-4">Social</h3>
           <div className="flex space-x-4">
-            <Image src={instawhite} alt="Instagram" width={24} height={24} />
-            <Image src={fbwhite} alt="Facebook" width={24} height={24} />
-            <Image src={twitterwhite} alt="Twitter" width={24} height={24} />
-            <Image src={lnwhite} alt="LinkedIn" width={24} height={24} />
+            <a
+              href="https://www.linkedin.com/in/sanjaykprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="hover:brightness-0 hover:invert"
+                width={24}
+                height={24}
+                src={lnwhite}
+                alt="LinkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com/sanjayk2701"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="hover:brightness-0 hover:invert"
+                width={24}
+                height={24}
+                src={fbwhite}
+                alt="GitHub"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/your-instagram-username"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="hover:brightness-0 hover:invert"
+                width={24}
+                height={24}
+                src={instawhite}
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="https://twitter.com/your-twitter-username"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="hover:brightness-0 hover:invert"
+                width={24}
+                height={24}
+                src={twitterwhite}
+                alt="Twitter"
+              />
+            </a>
           </div>
         </div>
       </div>
