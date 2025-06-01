@@ -61,7 +61,7 @@ export default function AboutPage() {
                 transition={{ delay: 1, duration: 0.8, ease: "easeOut" }}
                 className="text-base sm:text-md md:text-md text-textColor"
               >
-                I am a passionate <strong>frontend developer</strong> & <strong>Ux Designer</strong> with nearly 3 years of experience, I have built a track record of delivering intuitive and well-structured web applications. I am skilled at breaking down complex problems and creating interfaces that are both user-friendly and maintainable. My professional experience includes <strong>enterprise-level projects</strong> where I focused on thorough <strong>testing</strong> and code consistency. I work well with diverse teams to deliver solutions that meet both user needs and business objectives. I am committed to continuous learning and applying best practices to build effective applications.
+                I am a passionate <strong>frontend developer</strong> & <strong>Ux Designer</strong> with nearly 3 years of experience, I have built a track record of delivering intuitive and well-structured web applications. I am skilled at breaking down complex problems and creating interfaces that are both user-friendly and maintainable. My professional experience includes <strong>enterprise-level projects</strong> where I focused on thorough <strong>testing</strong> and code consistency. I work well with diverse teams to deliver solutions that meet both user needs and <strong>business objectives</strong>. I am committed to continuous learning and applying best practices to build effective applications.
 
               </motion.p>
               <motion.button
