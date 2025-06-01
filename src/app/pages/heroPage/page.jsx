@@ -68,7 +68,7 @@ export default function HeroPage() {
         </div>
 
         <p className="text-xs sm:text-lg md:text-md text-secondaryTextColor font-normal max-w-5xl px-4">
-          "I am a <strong>Front-End Developer</strong> & <strong>Ux Designer</strong> committed to turning
+          "I am a <strong>Front-End Developer</strong> & <strong>UX Designer</strong> committed to turning
           complex ideas into seamless digital experiences with a growth-oriented
           mindset, I aim to deliver work that balances usability, performance
           and visual appeal web application.{" "}
