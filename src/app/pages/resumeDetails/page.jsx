@@ -134,18 +134,18 @@ const resumeDetails = () => {
       {/* Education */}
       <div>
         <h3 className="text-2xl font-bold text-titleColor pb-2">EDUCATION</h3>
-        <div className="flex flex-row gap-2 items-start justify-start pt-3 text-textColor ">
-          <div className="flex flex-col items-center">
+        <div className="flex flex-row gap-2 items-start justify-start  text-textColor ">
+          {/* <div className="flex flex-col items-center">
             <div className="bg-gray-400 h-4 w-4 rounded-full"></div>
             <div className="bg-gray-300 w-0.5 h-12"></div>
-          </div>
-          <p className="text-sm pl-1 max-w-32">07/2024</p>
-          <div className="pl-8">
+          </div> */}
+          {/* <p className="text-sm pl-1 max-w-32">07/2024</p> */}
+          <div className="pl-2">
             <p className="text-base font-medium w-[34rem] ">
               <strong>B.E Computer Science and Engineering</strong> in SRM
               Easwari Engineering College
             </p>
-            <ul className="list-disc ml-6 mt-2 space-y-1">
+            <ul className="list-disc ml-4 mt-1 space-y-1">
               <li>Duration 2018-2022</li>
             </ul>
           </div>

@@ -25,7 +25,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-12 text-md font-medium pr-8">
-          {['hero', 'about', 'projects', 'skills', 'education', 'contact'].map((section, idx) => (
+          {['home', 'about', 'projects', 'skills', 'education', 'contact'].map((section, idx) => (
             <Link
               key={section}
               to={section}
@@ -42,7 +42,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
     {isOpen && (
   <div className="md:hidden absolute right-4 top-16  text-black rounded-md  p-4 flex flex-col space-y-4 text-md font-medium z-50">
-    {['hero', 'about', 'projects', 'skills', 'education', 'contact'].map((section, idx) => (
+    {['home', 'about', 'projects', 'skills', 'education', 'contact'].map((section, idx) => (
       <Link
         key={section}
         to={section}

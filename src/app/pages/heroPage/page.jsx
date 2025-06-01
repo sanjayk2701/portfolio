@@ -1,4 +1,6 @@
 "use client";
+
+import { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/page";
 import insta from "../../assets/insta.png";
 import facebook from "../../assets/facebook.png";
@@ -10,8 +12,32 @@ import Image from "next/image";
 import bgimage from "../../assets/bgimage.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { PropagateLoader } from "react-spinners";
 
 export default function HeroPage() {
+  const [loading, setLoading] = useState(true);
+
+  // Simulate loading (e.g. for bg image or data fetch)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); // 1.5 seconds loading
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="h-screen w-full bg-black  flex flex-col justify-center items-center">
+        <p className="text-2xl text-white mb-4 animate-pulse">
+          Assembling components, please wait...
+        </p>
+
+        <PropagateLoader color="#ffffff" size={15} />
+      </div>
+    );
+  }
+
   return (
     <div
       className="relative h-screen w-full flex flex-col justify-between bg-cover bg-center mb-20"
@@ -24,7 +50,7 @@ export default function HeroPage() {
           Hello,
         </motion.p>
         <motion.h2 className="text-2xl sm:text-6xl md:text-7xl font-medium drop-shadow-md shadow-sm leading-tight">
-         <span className="text-md">i'm</span> SANJAY K
+          <span className="text-[3rem]">I'm</span> SANJAY K
         </motion.h2>
 
         <div className="flex flex-col sm:flex-row items-center justify-center space-x-0 sm:space-x-2 mb-5 mt-3">
@@ -43,7 +69,7 @@ export default function HeroPage() {
         </div>
 
         <p className="text-xs sm:text-lg md:text-md text-secondaryTextColor font-normal max-w-5xl px-4">
-          "I am a <strong>Front-End Developer</strong> committed to turning
+          "I am a <strong>Front-End Developer</strong> & <strong>Ux Designer</strong> committed to turning
           complex ideas into seamless digital experiences with a growth-oriented
           mindset, I aim to deliver work that balances usability, performance
           and visual appeal web application.{" "}

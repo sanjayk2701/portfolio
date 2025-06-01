@@ -126,7 +126,7 @@ export default function Projects() {
             </motion.div>
           ))
         ) : (
-          <p>No projects found</p>
+          <p><></></p>
         )}
       </div>
     </div>

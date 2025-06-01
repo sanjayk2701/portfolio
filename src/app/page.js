@@ -8,9 +8,13 @@ import EducationOverview from "./pages/education/page";
 import Contact from "./pages/contact/page";
 import Footer from "./components/Footer/page";
 
+import { useState } from "react";
+
 export default function main() {
   return (
+
     <div>
+
       <section id="hero">
         <HeroPage />
       </section>
