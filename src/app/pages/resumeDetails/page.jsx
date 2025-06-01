@@ -11,7 +11,7 @@ const resumeDetails = () => {
 
     setTimeout(() => {
       event.preventDefault();
-      router.back(); // Use the built-in router back method to go bac
+      router.back(); 
     }, 2000);
   };
 

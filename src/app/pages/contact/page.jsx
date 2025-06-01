@@ -16,7 +16,7 @@ import { ThreeDots } from "react-loader-spinner";
 const ContactForm = () => {
   const [inputs, setInputs] = useState({});
   const [message, setMessage] = useState("");
-  const [isSuccess, setIsSuccess] = useState(null); // To differentiate between success and error messages
+  const [isSuccess, setIsSuccess] = useState(null); 
   const [isLoading, setIsLoading] = useState(false);
 
   const handleInput = (e) => {
@@ -63,10 +63,10 @@ const ContactForm = () => {
   return (
 <div className="h-full bg-white text-titleColor w-full px-4 sm:px-8 lg:px-12 pb-16">
       <motion.h3
-        initial={{ x: -20, opacity: 0 }} // Start position and scale
-        whileInView={{ x: 0, opacity: 1 }} // End position and scale
-        transition={{ duration: 1, delay: 0.3 }} // Increased duration
-        viewport={{ once: false }} // Ensure the animation occurs every time it enters the viewport
+        initial={{ x: -20, opacity: 0 }} 
+        whileInView={{ x: 0, opacity: 1 }} 
+        transition={{ duration: 1, delay: 0.3 }} 
+        viewport={{ once: false }} 
         className="text-5xl font-bold text-titleColor"
       >
         CONTACT <span className="font-medium">ME</span>
@@ -76,10 +76,10 @@ const ContactForm = () => {
           {/* Left Side */}
       <div className="flex flex-col gap-12 bg-primaryColor text-white w-full lg:max-w-xl px-6 sm:px-12 lg:px-20 py-12 sm:py-16 lg:py-32">
             <motion.div
-              initial={{ x: -20, scale: 0.8, opacity: 0 }} // Start position and scale
-              whileInView={{ x: 0, scale: 1, opacity: 1 }} // End position and scale
-              transition={{ duration: 0.5, delay: 0.3 }} // Transition effects
-              viewport={{ once: false }} // Ensure the animation occurs every time it enters the viewport
+              initial={{ x: -20, scale: 0.8, opacity: 0 }} 
+              whileInView={{ x: 0, scale: 1, opacity: 1 }} 
+              transition={{ duration: 0.5, delay: 0.3 }} 
+              viewport={{ once: false }} 
               className="flex flex-row items-center gap-2"
             >
           <Image src={location} alt="location" width={28} height={28} />
@@ -94,10 +94,10 @@ const ContactForm = () => {
               </div>
             </motion.div>
             <motion.div
-              initial={{ x: -20, scale: 0.8, opacity: 0 }} // Start position and scale
-              whileInView={{ x: 0, scale: 1, opacity: 1 }} // End position and scale
-              transition={{ duration: 0.5, delay: 0.5 }} // Transition effects
-              viewport={{ once: false }} // Ensure the animation occurs every time it enters the viewport
+              initial={{ x: -20, scale: 0.8, opacity: 0 }} 
+              whileInView={{ x: 0, scale: 1, opacity: 1 }} 
+              transition={{ duration: 0.5, delay: 0.5 }} 
+              viewport={{ once: false }} 
               className="flex flex-row items-center gap-2"
             >
               <Image src={email} width={28} height={28}  />
@@ -109,10 +109,10 @@ const ContactForm = () => {
               </div>
             </motion.div>
             <motion.div
-              initial={{ x: -20, scale: 0.8, opacity: 0 }} // Start position and scale
-              whileInView={{ x: 0, scale: 1, opacity: 1 }} // End position and scale
-              transition={{ duration: 0.5, delay: 0.8 }} // Transition effects
-              viewport={{ once: false }} // Ensure the animation occurs every time it enters the viewport
+              initial={{ x: -20, scale: 0.8, opacity: 0 }} 
+              whileInView={{ x: 0, scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.8 }} 
+              viewport={{ once: false }} 
               className="flex flex-row items-center gap-2"
             >
               <Image src={call} width={28} height={28}  />

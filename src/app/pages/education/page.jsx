@@ -52,7 +52,7 @@ const EducationOverview = () => {
               <motion.div
                 initial={{ x: -250, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: false }} // Ensure the animation occurs every time it enters the viewport
+                viewport={{ once: false }} 
                 transition={{
                   delay: 1.2,
                   x: { type: "spring", stiffness: 60 },
@@ -81,11 +81,11 @@ const EducationOverview = () => {
               <motion.h2
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: false }} // Ensure the animation occurs every time it enters the viewport
+                viewport={{ once: false }} 
                 transition={{
-                  delay: 1.2, // Increased delay
+                  delay: 1.2,
                   x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 2 }, // Increased duration
+                  opacity: { duration: 2 }, 
                   ease: "easeIn",
                 }}
                 className="text-2xl font-semibold text-gray-900"
@@ -105,9 +105,9 @@ const EducationOverview = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: false }}
                 transition={{
-                  delay: 1.4, // Increased delay
+                  delay: 1.4, 
                   x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 2 }, // Increased duration
+                  opacity: { duration: 2 }, 
                   ease: "easeIn",
                 }}
               >
@@ -132,11 +132,11 @@ const EducationOverview = () => {
               <motion.h2
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: false }} // Ensure the animation occurs every time it enters the viewport
+                viewport={{ once: false }} 
                 transition={{
-                  delay: 1.4, // Increased delay
+                  delay: 1.4, 
                   x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 2 }, // Increased duration
+                  opacity: { duration: 2 }, 
                   ease: "easeIn",
                 }}
                 className="text-2xl font-semibold text-gray-900"
@@ -145,20 +145,17 @@ const EducationOverview = () => {
               </motion.h2>
             </div>
 
-            {/* Circle and content on right side */}
-            <div className="flex items-start space-x-4">
-              {/* Circle */}
-              <div className="w-10 flex-shrink-0 flex justify-center z-10">
+            <div className="flex items-start space-x-4">              <div className="w-10 flex-shrink-0 flex justify-center z-10">
                 <div className="w-10 h-10 rounded-full border-[4px] border-primaryColor bg-white"></div>
               </div>
               <motion.div
                 initial={{ x: -250, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: false }} // Ensure the animation occurs every time it enters the viewport
+                viewport={{ once: false }} 
                 transition={{
-                  delay: 1.6, // Increased delay
+                  delay: 1.6, 
                   x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 2 }, // Increased duration
+                  opacity: { duration: 2 }, 
                   ease: "easeIn",
                 }}
               >

@@ -17,11 +17,10 @@ import { PropagateLoader } from "react-spinners";
 export default function HeroPage() {
   const [loading, setLoading] = useState(true);
 
-  // Simulate loading (e.g. for bg image or data fetch)
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // 1.5 seconds loading
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
