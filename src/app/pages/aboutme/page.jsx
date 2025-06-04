@@ -42,7 +42,7 @@ export default function AboutPage() {
         post.map((post) => (
           <div
             key={post.id}
-            className="flex flex-col md:flex-row items-center justify-between gap-12 w-full max-w-6xl"
+            className="flex flex-col md:flex-row items-center justify-between gap-12 w-full max-w-6xl mt-[3rem]"
           >
             <div className="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left">
               <motion.h3
