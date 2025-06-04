@@ -17,25 +17,25 @@ import { PropagateLoader } from "react-spinners";
 export default function HeroPage() {
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 1500);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
 
-  //   return () => clearTimeout(timer);
-  // }, []);
+    return () => clearTimeout(timer);
+  }, []);
 
-  // if (loading) {
-  //   return (
-  //     <div className="h-screen w-full bg-black  flex flex-col justify-center items-center">
-  //       <p className="text-2xl text-white mb-4 animate-pulse">
-  //         Assembling components, please wait...
-  //       </p>
+  if (loading) {
+    return (
+      <div className="h-screen w-full bg-black  flex flex-col justify-center items-center">
+        <p className="text-2xl text-white mb-4 animate-pulse">
+          Assembling components, please wait...
+        </p>
 
-  //       <PropagateLoader color="#ffffff" size={15} />
-  //     </div>
-  //   );
-  // }
+        <PropagateLoader color="#ffffff" size={15} />
+      </div>
+    );
+  }
 
   return (
     <div
