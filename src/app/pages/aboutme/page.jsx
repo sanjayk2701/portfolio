@@ -44,7 +44,7 @@ export default function AboutPage() {
             key={post.id}
             className="flex flex-col md:flex-row items-center justify-between gap-12 w-full max-w-6xl mt-[3rem]"
           >
-            <div className="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left">
+<div className="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left items-center md:items-start mx-auto">
               <motion.h3
                 initial={{ y: 100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -59,7 +59,7 @@ export default function AboutPage() {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false }}
                 transition={{ delay: 1, duration: 0.8, ease: "easeOut" }}
-                className="text-base sm:text-md md:text-md text-textColor"
+                className="text-sm sm:text-lg md:text-md  text-textColor"
               >
                 I am a passionate <strong>frontend developer</strong> & <strong>UX Designer</strong> with nearly 3 years of experience, I have built a track record of delivering intuitive and well-structured web applications. I am skilled at breaking down complex problems and creating interfaces that are both user-friendly and maintainable. My professional experience includes <strong>enterprise-level projects</strong> where I focused on thorough <strong>testing</strong> and code consistency. I work well with diverse teams to deliver solutions that meet both user needs and <strong>business objectives</strong>. I am committed to continuous learning and applying best practices to build effective applications.
 

@@ -11,7 +11,7 @@ const resumeDetails = () => {
 
     setTimeout(() => {
       event.preventDefault();
-      router.back(); 
+      router.back();
     }, 2000);
   };
 
@@ -19,11 +19,13 @@ const resumeDetails = () => {
     <div className="max-w-3xl mx-auto p-8 space-y-8 bg-white border border-gray-300 text-textColor">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-5xl text-titleColor font-bold">SANJAY K</h1>
-        <h2 className="text-base mt-2">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-titleColor font-bold">
+          SANJAY K
+        </h1>
+        <h2 className="text-sm sm:text-base md:text-lg mt-2">
           Associate Software Engineer | Front-End Development
         </h2>
-        <p className="text-base">
+        <p className="text-sm sm:text-base">
           sanjaykalidass27@gmail.com | 7708660262 | Chennai, India 600083
         </p>
       </div>
@@ -31,16 +33,25 @@ const resumeDetails = () => {
 
       {/* Skills Section */}
       <div>
-        <h3 className="text-2xl font-bold text-titleColor pb-2">SKILLS</h3>
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-titleColor pb-2">
+          SKILLS
+        </h3>
         <div className="flex flex-row space-x-8 text-textColor pl-2">
           <div>
             <ul className="list-disc list-inside text-base space-y-0">
               <li>Languages : JavaScript, Html, CSS, SCSS, Tailwind Css.</li>
-              <li>Frameworks & Libraries : React.Js, Redux, Next.Js, Node.Js, Express.Js.</li>
-              <li>Database: MongoDB</li>
-              <li>Tools & Platforms: Jest, VS Code, Github, RESTful APIs, Axios, WebSockets, Figma.</li>
               <li>
-              Specifications: Web Application Development, Responsive Web Design,API Integration, Wireframing & Prototype Design.
+                Frameworks & Libraries : React.Js, Redux, Next.Js, Node.Js,
+                Express.Js.
+              </li>
+              <li>Database: MongoDB</li>
+              <li>
+                Tools & Platforms: Jest, VS Code, Github, RESTful APIs, Axios,
+                WebSockets, Figma.
+              </li>
+              <li>
+                Specifications: Web Application Development, Responsive Web
+                Design,API Integration, Wireframing & Prototype Design.
               </li>
             </ul>
           </div>
@@ -54,26 +65,32 @@ const resumeDetails = () => {
           PROFESSIONAL EXPERIENCE
         </h3>
         <div className="flex flex-row gap-2 items-start justify-start text-textColor">
-         
-       
           <div>
             <p className="text-[14px] font-semibold">
               Prodapt | Associate Software Engineer | Aug 2022 - Present
             </p>
             <ul className="list-disc mt-2 ml-2 px-3  space-y-1">
               <li>
-               Engineered scalable frontend using React.js and JavaScript enhancing component reusability and maintainability across projects.
+                Engineered scalable frontend using React.js and JavaScript
+                enhancing component reusability and maintainability across
+                projects.
               </li>
               <li>
-               Integrated REST APIs and WebSockets to enable real-time updates, enhancing user interactivity and reducing data latency by 45%.
+                Integrated REST APIs and WebSockets to enable real-time updates,
+                enhancing user interactivity and reducing data latency by 45%.
               </li>
               <li>
-              Boosted UI performance by 30% through implementation of lazy loading, code splitting, and DOM virtualization.
+                Boosted UI performance by 30% through implementation of lazy
+                loading, code splitting, and DOM virtualization.
               </li>
               <li>
-               Conducted over 50+ code reviews and unit-tested components using Jest, ensuring 80%+ coverage and reducing post-deployment bugs.
+                Conducted over 50+ code reviews and unit-tested components using
+                Jest, ensuring 80%+ coverage and reducing post-deployment bugs.
               </li>
-              <li>Partnered with design and product teams to ship accessible, WCAG-compliant interfaces on time and within scope.</li>
+              <li>
+                Partnered with design and product teams to ship accessible,
+                WCAG-compliant interfaces on time and within scope.
+              </li>
             </ul>
           </div>
         </div>
@@ -120,7 +137,9 @@ const resumeDetails = () => {
           },
         ].map((project, index) => (
           <div key={index} className="my-2 text-textColor">
-            <h4 className="text-xl font-semibold">{project.title}</h4>
+            <h4 className="text-lg sm:text-xl md:text-2xl font-semibold">
+              {project.title}
+            </h4>
             <ul className="list-disc ml-6 mt-2 space-y-1">
               {project.description.map((item, idx) => (
                 <li key={idx}>{item}</li>
@@ -145,7 +164,7 @@ const resumeDetails = () => {
               <strong>B.E Computer Science and Engineering</strong> in SRM
               Easwari Engineering College
             </p>
-            <ul className="list-disc ml-4 mt-1 space-y-1">
+            <ul className="list-disc list-inside text-sm sm:text-base space-y-1">
               <li>Duration 2018-2022</li>
             </ul>
           </div>
@@ -155,9 +174,8 @@ const resumeDetails = () => {
       {/* Back Button */}
       <div className="mt-20">
         <button
-          style={{ width: "90px", height: "40px" }}
+          className="w-[90px] sm:w-[100px] h-[40px] bg-gray-700 text-white font-semibold rounded-md hover:bg-gray-800 py-2 px-4 transition flex justify-center items-center"
           onClick={handleBack}
-          className=" bg-gray-700 text-white font-semibold rounded-md hover:bg-gray-800  py-2 px-4 transition flex justify-center items-center"
         >
           {isLoading ? (
             <ThreeDots

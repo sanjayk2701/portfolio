@@ -10,8 +10,8 @@ export default function Footer() {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between gap-10">
         {/* Left Section */}
         <div className="flex-1">
-          <h2 className="text-2xl font-semibold mb-4">SANJAY K</h2>
-          <p className="leading-6 font-semibold max-w-xl">
+          <h2 className="text-md sm:text-xl font-semibold mb-4">SANJAY K</h2>
+          <p className="leading-6 font-semibold max-w-xl text-sm sm:text-md">
             I am a Front-End Developer and UX Designer with a focus on crafting
             sleek, responsive web experiences. Let’s collaborate to create
             user-centered, engaging digital experiences.
@@ -20,7 +20,7 @@ export default function Footer() {
 
         {/* Right Section */}
         <div className="flex-1 md:flex-none">
-          <h3 className="text-lg font-semibold mb-4">Social</h3>
+          <h3 className="text-md sm:text-lg font-semibold mb-4">Social</h3>
           <div className="flex space-x-4">
             <a
               href="https://www.linkedin.com/in/sanjaykprofile"

@@ -26,7 +26,7 @@ export default function Skills() {
   return (
     <div>
       <div
-        className="skills bg-white text-textColor h-full w-full p-12 mb-12"
+        className="skills bg-white text-textColor h-full w-full p-12 mb-12 min-h-screen"
         onMouseEnter={handleMouseEnter}
       >
         <motion.h3
@@ -39,7 +39,7 @@ export default function Skills() {
           TECHNICAL <span className="font-bold">SKILLS</span>
         </motion.h3>
         <div className="skills_section">
-          <div className="skills_main">
+          <div className="skills_main  ">
             {[
               { name: "Html", percentage: 90, image: html },
               { name: "Css", percentage: 80, image: css },
@@ -54,14 +54,14 @@ export default function Skills() {
               { name: "Express Js", percentage: 50, image: expressjs },
             ].map((skill, index) => (
               <div className="skill_bar" key={index}>
-                <div className="icon_row">
+                <div className="icon_row ">
                   <Image
                     width={45}
                     src={skill.image}
                     alt={`${skill.name} icon`}
                   />
                 </div>
-                <div className="content_row">
+                <div className="content_row text-sm sm:text-lg md:text-md">
                   <div className="info">
                     <h3>{skill.name}</h3>
                     <p>{skill.percentage}%</p>

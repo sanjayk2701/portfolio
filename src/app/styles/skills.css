@@ -1,7 +1,7 @@
 .skills_section {
     width: 100%;
-    height: 82vh;
-    padding: 50px 30px;
+  min-height: 80vh;
+  height: auto; /* allow it to grow */    padding: 50px 30px;
     display: flex;
     align-items: center;
     justify-content:flex-start;
@@ -10,20 +10,34 @@
 }
 
 .skills_main {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 25px;
-    /* grid-column-gap: 30px; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  grid-row-gap: 25px;
 }
+
+@media (min-width: 768px) {
+  .skills_main {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablets and larger */
+    
+  }
+}
+
 
 .skill_bar {
     display: flex;
-    flex-direction: row; /* To stack the icon and content rows vertically */
+    flex-direction: row; 
     align-items: center;
     gap: 8px;
     justify-content: center;
+      width: 100%;
+  flex-wrap: wrap
 }
+
+.content_row {
+  width: 100%; 
+}
+
 
 .icon_row {
     display: flex;

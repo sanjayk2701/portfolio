@@ -43,13 +43,12 @@ export default function HeroPage() {
       style={{ backgroundImage: `url(${bgimage.src})` }}
     >
       <Navbar />
-
       <div className="flex flex-col items-center text-secondaryTextColor font-normal px-6 md:px-12 pb-5 text-center pb-[120px]">
         <motion.p className="text-lg sm:text-2xl md:text-2xl font-medium pb-2">
           Hello,
         </motion.p>
-        <motion.h2 className="text-2xl sm:text-6xl md:text-7xl font-medium drop-shadow-md shadow-sm leading-tight">
-          <span className="text-[3rem]">I'm</span> SANJAY K
+        <motion.h2 className="text-4xl sm:text-6xl md:text-7xl font-medium drop-shadow-md shadow-sm leading-tight">
+          <span className="text-2xl sm:text6xl md:text-6xl">I'm</span> SANJAY K
         </motion.h2>
 
         <div className="flex flex-col sm:flex-row items-center justify-center space-x-0 sm:space-x-2 mb-5 mt-3">
@@ -67,7 +66,7 @@ export default function HeroPage() {
           </div>
         </div>
 
-        <p className="text-xs sm:text-lg md:text-md text-secondaryTextColor font-normal max-w-5xl px-4">
+        <p className="text-md sm:text-lg md:text-md text-secondaryTextColor font-normal max-w-5xl px-4">
           "I am a <strong>Front-End Developer</strong> & <strong>UX Designer</strong> committed to turning
           complex ideas into seamless digital experiences with a growth-oriented
           mindset, I aim to deliver work that balances usability, performance
